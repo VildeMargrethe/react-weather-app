@@ -1,11 +1,11 @@
 import './App.css';
+import Signature from "./Signature";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       Weather App
+      <Signature />
     </div>
   );
 }
-
-export default App;

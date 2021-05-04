@@ -1,0 +1,31 @@
+.overview-icons {
+  font-size: 40px;
+  color: #b5daf9;
+}
+
+.week-overview {
+  font-size: 15px;
+  color: black;
+}
+
+.day-overview {
+  font-size: 14px;
+  color: black;
+}
+
+.weather-forecast-temperature {
+  font-size: 14px;
+}
+
+.day-card {
+  background-color: white;
+  opacity: 0.5;
+  width: 500px;
+  border-radius: 30px;
+}
+
+.day-card:hover {
+  background-color: white;
+  opacity: 0.6;
+  transition-delay: 0.1s;
+}

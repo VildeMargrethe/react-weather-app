@@ -1,0 +1,14 @@
+.city-date-temp-list {
+  list-style-type: none;
+}
+
+.city {
+  padding: 40px 0 0 0;
+  font-size: 30px;
+  padding-bottom: 1px;
+}
+.city-date-temp-list {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 9px;
+}

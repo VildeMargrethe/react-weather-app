@@ -1,0 +1,15 @@
+.search-form {
+  padding-top: 5px;
+  padding-bottom: 40px;
+  height: 17px;
+}
+
+.search {
+  padding: 20px 0 0 0;
+}
+
+#search-button {
+  background-color: #bfc2e8;
+  border-color: #bfc2e8;
+  color: white;
+}

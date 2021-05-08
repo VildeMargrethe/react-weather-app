@@ -5,11 +5,10 @@ import Signature from "./Signature";
 export default function App() {
   return (
     <div className="App">
-      <div className = "container">
-      Weather App
-      <Weather />
-      <Signature />
-    </div>
+      <div className="container">
+        <Weather />
+        <Signature />
+      </div>
     </div>
   );
 }

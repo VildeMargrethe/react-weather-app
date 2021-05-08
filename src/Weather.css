@@ -1,3 +1,42 @@
-.Weather{
-
-}
+.search-form {
+    padding-top: 5px;
+    padding-bottom: 40px;
+    height: 17px;
+  }
+  
+  .search {
+    padding: 20px 0 0 0;
+  }
+  
+  #search-button {
+    background-color: #bfc2e8;
+    border-color: #bfc2e8;
+    color: white;
+  }
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  body {
+    font-family: "Open Sans Condensed", sans-serif;
+    background-color: #eaecf9;
+  }
+  
+  h4 {
+    font-size: 12px;
+  }
+  
+  .large-card {
+    background-color: white;
+    width: 600px;
+    border-radius: 30px;
+  }
+  
+  .inner-card {
+    background-color: #eaecf9;
+    background: url("./background-card4.png");
+    width: 540px;
+    border-radius: 5px;
+    padding: 2px;
+  }

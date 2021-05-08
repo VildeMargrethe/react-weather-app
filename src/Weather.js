@@ -1,5 +1,8 @@
 import React from "react";
 import "./Weather.css";
+import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
+
 export default function () {
     return (
         <div className="large-card mx-auto mt-3 shadow p-3 mb-5">
@@ -27,17 +30,9 @@ export default function () {
                     </div>
                 </form>
                 <div className="inner-card mt-3 w-110">
-                    CityDate
-                <div className="row">
-                        <div className="col-6">
-                            Weather
-                  </div>
-                        <div className="col-6">
-                            WeatherInfoList
-                  </div>
-                    </div>
-                WeatherForcast
-              </div>
+                    <WeatherInfo />
+                    <WeatherForecast />
+                </div>
             </div>
         </div>
     );

@@ -40,7 +40,7 @@ export default function (props) {
         return (
             <div className="large-card mx-auto mt-3 shadow p-3 mb-5">
                 <div className="card-body">
-                    <form className="search-form" id="search-form">
+                    <form onSubmit={handleSubmit} className="search-form" id="search-form">
                         <div className="row">
                             <div className="col-9">
                                 <input
@@ -50,6 +50,7 @@ export default function (props) {
                                     placeholder="Search for your city"
                                     autocomplete="off"
                                     autofocus="on"
+                                    onChange={handleCityChange}
                                 />
                             </div>
                             <div className="col-3">

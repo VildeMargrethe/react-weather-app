@@ -1,14 +1,15 @@
 import React from "react";
+import DayAndTime from "./DayAndTime";
 import "./WeatherInfo.css";
 
-export default function WeatherInfo() {
+export default function WeatherInfo(props) {
     return (<div>
         <ul className="city-date-temp-list">
             <li>
-                <h2 className="city" id="city-name">Paris</h2>
+                <h2 className="city">{props.data.city}</h2>
             </li>
             <li className="today row">
-                <p id="date">Saturday</p>
+                <DayAndTime date={props.data.date} />
             </li>
         </ul>
         <div className="row">
@@ -18,7 +19,7 @@ export default function WeatherInfo() {
                     <span className="temperature" id="temperature"></span>
                     <span className="units">
                         <a href="#" id="celsius-link" className="active">
-                            {" "}
+                            {Math.round(props.data.temperature)}{" "}
           °C{" "}
                         </a>
         |{" "}
@@ -30,18 +31,16 @@ export default function WeatherInfo() {
             </div>
             <div className="col-6">
                 <ul className="weather-info-list">
-                    <li>
-                        <p id="description"></p>
+                    <li >
+                        <p id="description">{props.data.description}</p>
                     </li>
                     <li>
                         <p>
-                            Humidity: <span id="humidity"></span>%
-        </p>
+                            Humidity: <span id="humidity">{Math.round(props.data.humidity)}</span>%</p>
                     </li>
                     <li>
                         <p>
-                            Wind: <span id="wind"></span> km/h
-        </p>
+                            Wind: <span id="wind">{Math.round(props.data.wind)}</span> km/h</p>
                     </li>
                 </ul>
             </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import DayAndTime from "./DayAndTime";
+import WeatherTemperature from "./WeatherTemperature";
+import WeatherIcon from "./WeatherIcon";
 import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
@@ -15,18 +17,8 @@ export default function WeatherInfo(props) {
         <div className="row">
             <div className="col-6">
                 <div className="clearfix weather-temperature">
-                    <img src="" alt="Clear" id="weather-icon" className="float-left" />
-                    <span className="temperature" id="temperature"></span>
-                    <span className="units">
-                        <a href="#" id="celsius-link" className="active">
-                            {Math.round(props.data.temperature)}{" "}
-          °C{" "}
-                        </a>
-        |{" "}
-                        <a href="#" id="fahrenheit-link">
-                            °F{" "}
-                        </a>
-                    </span>
+                    <WeatherIcon code={props.data.icon} />
+                    <WeatherTemperature celsius={props.data.temperature} />
                 </div>
             </div>
             <div className="col-6">

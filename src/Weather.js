@@ -11,6 +11,7 @@ export default function (props) {
     function handleResponse(response) {
         setWeatherData({
             ready: true,
+            coordinates: response.data.coord,
             temperature: response.data.main.temp,
             humidity: response.data.main.humidity,
             date: new Date(response.data.dt * 1000),
@@ -65,7 +66,7 @@ export default function (props) {
                     </form>
                     <div className="inner-card mt-3 w-110">
                         <WeatherInfo data={weatherData} />
-                        <WeatherForecast data={weatherData} />
+                        <WeatherForecast coordinates={weatherData.coordinates} />
                     </div>
                 </div>
             </div>

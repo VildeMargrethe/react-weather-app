@@ -1,36 +1,36 @@
-.Weatherforecast .overview-icons {
+.overview-icons {
   font-size: 40px;
   color: #b5daf9;
 }
 
-.Weatherforecast .week-overview {
+.week-overview {
   font-size: 15px;
   color: black;
 }
 
-.Weatherforecast .day-overview {
+.day-overview {
   font-size: 14px;
   color: black;
 }
 
-.Weatherforecast .WeatherForecast-temperatures {
+.WeatherForecast-temperatures {
   font-size: 14px;
 }
 
-.Weatherforecast .day-card {
+.day-card {
   background-color: white;
   opacity: 0.5;
   width: 500px;
   border-radius: 30px;
 }
 
-.Weatherforecast .day-card:hover {
+.day-card:hover {
   background-color: white;
   opacity: 0.6;
   transition-delay: 0.1s;
 }
 
-.Weatherforecast .WeatherForecast-temperature-min{
+.WeatherForecast-temperature-min{
   opacity: 0.6;
   margin-left: 3px;
   font-size: 12px;

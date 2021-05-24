@@ -1,28 +1,17 @@
-.city-date-temp-list {
-    list-style-type: none;
-  }
-  
-  .city {
+ .city {
     padding: 40px 0 0 0;
     font-size: 30px;
     padding-bottom: 1px;
   }
-  .city-date-temp-list {
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 9px;
-  }
-  .weather-temperature .active {
-    color: black;
-    cursor: default;
-  }
-  
-  .weather-temperature .active:hover {
-    text-decoration: none;
+
+  .day{
+    padding: 0 0 0 209px;
+    font-size: 16px;
   }
   
   .temperature {
     font-size: 40px;
+    padding-top: 10px;
   }
   
   .units {
@@ -31,31 +20,32 @@
     font-size: 15px;
   }
   
-  #description {
-    padding-top: 14px;
-    font-size: 16px;
-    font-style: italic;
-  }
-  
-  #temperature {
-    padding-top: 10px;
-  }
-  
-  #celsius-link {
-    text-decoration: none;
-  }
-  
-  #fahrenheit-link {
-    text-decoration: none;
-  }
-  
-  #today-date {
-    font-size: 12px;
-  }
-  
   .weather-info-list {
     list-style-type: none;
     font-size: 16px;
     font-weight: 100;
     line-height: 9px;
   }
+
+  .city-date-list {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 9px;
+  }
+
+  .weather-temperature .active {
+    color: black;
+    cursor: default;
+  }
+  
+  .weather-temperature .active:hover {
+    text-decoration: none;
+  }
+
+  #description {
+    padding-top: 14px;
+    font-size: 16px;
+    font-style: italic;
+  }
+  

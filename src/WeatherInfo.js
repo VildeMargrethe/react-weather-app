@@ -6,19 +6,19 @@ import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
     return (<div>
-        <ul className="city-date-temp-list">
+        <ul className="city-date-list">
             <li>
                 <h2 className="city">{props.data.city}</h2>
             </li>
-            <li className="today row">
+            <li className="day row">
                 <DayAndTime date={props.data.date} />
             </li>
         </ul>
         <div className="row">
             <div className="col-6">
                 <div className="clearfix weather-temperature">
-                    <WeatherIcon code={props.data.icon} size={53} />
-                    <span className="temperature" id="temperature">
+                    <WeatherIcon code={props.data.icon} size={50} />
+                    <span className="temperature">
                         {Math.round(props.data.temperature)}
                         <span className="units">
                             {" "}°C{" "}
